@@ -1,0 +1,92 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="13196" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="13173"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--View Controller-->
+        <scene sceneID="tne-QT-ifu">
+            <objects>
+                <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="Quizzler_ios11" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="rxI-Yc-FEM">
+                                <rect key="frame" x="5" y="40" width="365" height="100"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="100" id="MKC-Kv-X4H"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" pointSize="22"/>
+                                <color key="textColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="6Lf-fW-X5y">
+                                <rect key="frame" x="5" y="340" width="365" height="60"/>
+                                <color key="backgroundColor" red="0.0" green="0.58980089430000004" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="60" id="Ugh-AC-zlF"/>
+                                </constraints>
+                                <state key="normal" title="true">
+                                    <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                </state>
+                                <connections>
+                                    <action selector="answerbtnclicked:" destination="BYZ-38-t0r" eventType="touchUpInside" id="ajv-HS-y2P"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="jul-DG-4S4">
+                                <rect key="frame" x="5" y="415" width="365" height="60"/>
+                                <color key="backgroundColor" red="0.0" green="0.98106676339999999" blue="0.57369142770000003" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="60" id="w8o-Bl-YZr"/>
+                                </constraints>
+                                <state key="normal" title="false">
+                                    <color key="titleColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                </state>
+                                <connections>
+                                    <action selector="answerbtnclicked:" destination="BYZ-38-t0r" eventType="touchUpInside" id="tfG-XP-8hA"/>
+                                </connections>
+                            </button>
+                            <progressView opaque="NO" contentMode="scaleToFill" verticalHuggingPriority="750" progressViewStyle="bar" progress="0.5" translatesAutoresizingMaskIntoConstraints="NO" id="xmw-Lf-orQ">
+                                <rect key="frame" x="5" y="652" width="365" height="6"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="5" id="7M1-kv-4BZ"/>
+                                </constraints>
+                                <color key="progressTintColor" red="0.0" green="0.97680455450000003" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <color key="trackTintColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                            </progressView>
+                        </subviews>
+                        <color key="backgroundColor" red="0.32369780539999998" green="0.1063579395" blue="0.574860394" alpha="0.80112906678082196" colorSpace="custom" customColorSpace="sRGB"/>
+                        <constraints>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="6Lf-fW-X5y" secondAttribute="trailing" constant="5" id="6ZH-Yg-1L7"/>
+                            <constraint firstItem="rxI-Yc-FEM" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" constant="20" id="6l4-D9-ri2"/>
+                            <constraint firstAttribute="trailing" secondItem="xmw-Lf-orQ" secondAttribute="trailing" constant="5" id="DE4-UD-a8d"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="jul-DG-4S4" secondAttribute="trailing" constant="5" id="Gmb-ti-Iym"/>
+                            <constraint firstItem="xmw-Lf-orQ" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leading" constant="5" id="Pey-Se-0Hf"/>
+                            <constraint firstItem="jul-DG-4S4" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="5" id="Ugc-kV-KY6"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="bottom" secondItem="xmw-Lf-orQ" secondAttribute="bottom" constant="10" id="YnL-0i-Ti8"/>
+                            <constraint firstItem="6Lf-fW-X5y" firstAttribute="top" secondItem="rxI-Yc-FEM" secondAttribute="bottom" constant="200" id="hYV-YL-6Nc"/>
+                            <constraint firstItem="6Lf-fW-X5y" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="5" id="kxr-eW-01d"/>
+                            <constraint firstItem="rxI-Yc-FEM" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="5" id="szb-xY-zC0"/>
+                            <constraint firstItem="jul-DG-4S4" firstAttribute="top" secondItem="6Lf-fW-X5y" secondAttribute="bottom" constant="15" id="ycR-gN-9Tk"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="rxI-Yc-FEM" secondAttribute="trailing" constant="5" id="zV5-jS-z9v"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
+                    </view>
+                    <connections>
+                        <outlet property="faleBTN" destination="jul-DG-4S4" id="TH7-KZ-4p7"/>
+                        <outlet property="labelTXT" destination="rxI-Yc-FEM" id="fsQ-oO-J62"/>
+                        <outlet property="progressbar" destination="xmw-Lf-orQ" id="JxH-4Z-kKc"/>
+                        <outlet property="trueBTN" destination="6Lf-fW-X5y" id="jEA-sc-Ir0"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+            </objects>
+        </scene>
+    </scenes>
+</document>
